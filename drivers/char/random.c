@@ -81,9 +81,9 @@
 
 #define LONGS(x) (((x) + sizeof(unsigned long) - 1)/sizeof(unsigned long))
 
-static int random_read_wakeup_thresh = 64;
+static int random_read_wakeup_thresh = 256;
 
-static int random_write_wakeup_thresh = 128;
+static int random_write_wakeup_thresh = 512;
 
 
 static int trickle_thresh __read_mostly = INPUT_POOL_WORDS * 28;
